@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,17 +8,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ロード画面 -->
   <div id="loading-screen">
     <div class="typewriter">
       <span id="type-text"></span><span class="cursor">|</span>
     </div>
   </div>
 
-  <!-- メインコンテンツ -->
   <div id="main-content" class="hidden">
 
-    <!-- ✅ ヘッダー（クラス名追加！） -->
     <header class="site-header fade-element">
       <div class="logo">FLLAZ</div>
       <div class="hamburger" id="hamburger">
@@ -36,7 +33,6 @@
       </nav>
     </header>
 
-    <!-- メインエリア -->
     <main>
       <h1>404 - Not Found</h1>
       <p>You will be redirected to the top page in 5 seconds.</p>
@@ -44,13 +40,11 @@
       <a href="/">Return now</a>
     </main>
 
-    <!-- ✅ フッター（共通デザイン） -->
     <footer class="site-footer fade-element">
       <p class="copyright">© 2025 FLLAZ All Rights Reserved.</p>
     </footer>
   </div>
 
-  <!-- スクリプト -->
   <script>
     const text = "FLLAZ";
     const typeText = document.getElementById("type-text");
@@ -86,7 +80,6 @@
       typeWriter();
     });
 
-    // ハンバーガーメニュー
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
@@ -94,7 +87,6 @@
       navMenu.classList.toggle('active');
     });
 
-    // 自動リダイレクト
     let sec = 5;
     const el = document.getElementById('count');
     const url = '/';
