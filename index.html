@@ -15,20 +15,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ロード画面 -->
   <div id="loading-screen">
     <div class="typewriter">
       <span id="type-text"></span><span class="cursor">|</span>
     </div>
   </div>
 
-  <!-- メインコンテンツ -->
   <div id="main-content" class="hidden">
-    <!-- ヘッダー -->
     <header class="site-header">
       <div class="logo">FLLAZ</div>
 
-      <!-- ハンバーガーメニュー -->
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -44,17 +40,14 @@
       </nav>
     </header>
 
-    <!-- メインビジュアル -->
     <section class="main-visual fade-element">
       <img src="images/logo.png" alt="FLLAZ Logo" class="main-logo" />
     </section>
-
-    <!-- サーバー参加ボタン -->
+    
     <section id="join" class="join-section fade-element">
       <a href="https://dsc.gg/fllaz" target="_blank" class="join-discord-btn">Join to FLLAZ!!</a>
     </section>
 
-    <!-- STATEMENT -->
     <section id="statement" class="statement-section fade-element">
       <h2>STATEMENT</h2>
       <p>This piercing feeling, this burning passion<br>
@@ -71,7 +64,6 @@ That's it, that's it—the only Buffaloes we know
 </p>
     </section>
 
-    <!-- ABOUT-->
     <section id="about" class="about-section fade-element">
       <h2>ABOUT<h2>
       <div class="about-list">
@@ -90,7 +82,6 @@ That's it, that's it—the only Buffaloes we know
       </div>
     </section>
 
-    <!-- 動画 -->
     <section id="video" class="video-section fade-element">
       <h2>Youtube</h2>
       <div class="video-wrapper">
@@ -98,14 +89,12 @@ That's it, that's it—the only Buffaloes we know
       </div>
     </section>
 
-    <!-- フッター -->
     <footer class="site-footer fade-element">
       <p class="copyright">© 2025 FLLAZ All Rights Reserved.</p>
     </footer>
   </div>
 
   <script>
-    // === タイプライター効果 ===
     const text = "FLLAZ";
     const typeText = document.getElementById("type-text");
     const cursor = document.querySelector(".cursor");
@@ -142,7 +131,6 @@ That's it, that's it—the only Buffaloes we know
       typeWriter();
     });
 
-    // === ハンバーガーメニュー ===
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
